@@ -13,20 +13,27 @@ For both systems, we compare centralized and decentralized control strategies us
 This part investigates a large-scale system with minimal interaction between its subsystems.
 ### Centralized Control
 -The system is modeled as a 2×2 transfer function matrix and converted to a minimal state-space representation.
+
 -A centralized LQR controller is designed using identity matrices for Q and R.
+
 -Simulation (using ode45) shows:
+
    All states converge to zero from a non-zero initial condition.
    Control inputs are smooth and bounded.
    A cost function measuring total state energy is computed.
 ### Decentralized Control
 -The system is divided into two subsystems, each with its own local LQR controller.
+
 -A block-diagonal controller gain matrix is formed.
+
 -Simulation shows:
+
    Effective regulation of system states, slightly slower than centralized control.
    Structured and practical control inputs.
    Cost is higher than centralized but still acceptable.
 ### Summary
 -Centralized control offers better performance.
+
 -Decentralized control provides scalability and ease of implementation in distributed architectures.
 
 ## 🔹Coupled System
