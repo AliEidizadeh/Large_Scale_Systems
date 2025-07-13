@@ -15,17 +15,17 @@ For both systems, we compare centralized and decentralized control strategies us
 ## 🔹Weakly Coupled System
 This part investigates a large-scale system with minimal interaction between its subsystems.
 ### Centralized Control
--The system is modeled as a 2×2 transfer function matrix and converted to a minimal state-space representation.
+🔸The system is modeled as a 2×2 transfer function matrix and converted to a minimal state-space representation.
 
--A centralized LQR controller is designed using identity matrices for Q and R.
+🔸A centralized LQR controller is designed using identity matrices for Q and R.
 
--Simulation (using ode45) shows:
+🔸Simulation (using ode45) shows:
 
-&nbsp;&nbsp;&nbsp;&nbsp; All states converge to zero from a non-zero initial condition.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All states converge to zero from a non-zero initial condition.
    
-&nbsp;&nbsp;&nbsp;&nbsp; Control inputs are smooth and bounded.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Control inputs are smooth and bounded.
    
-&nbsp;&nbsp;&nbsp;&nbsp; A cost function measuring total state energy is computed.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A cost function measuring total state energy is computed.
    
 ### Decentralized Control
 -The system is divided into two subsystems, each with its own local LQR controller.
