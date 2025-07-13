@@ -1,7 +1,7 @@
 # Large Scale Systems
 This repository contains large-scale systems projects focused on centralized and decentralized control design in MIMO systems.
 
-#First LSS Project
+# First LSS Project
 Design of Centralized and Decentralized Controllers for Large-Scale Systems
 
 This project focuses on the modeling, analysis, and control of two types of large-scale multi-input multi-output (MIMO) systems:
