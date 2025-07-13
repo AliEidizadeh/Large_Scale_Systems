@@ -1,6 +1,6 @@
 # Large Scale Systems
 This repository contains large-scale systems projects focused on centralized and decentralized control design in MIMO systems.
-=========
+
 # First LSS Project
 Design of Centralized and Decentralized Controllers for Large-Scale Systems
 
@@ -77,7 +77,7 @@ This part focuses on a system with significant interaction between subsystems �
 🔸Centralized design yields better optimal performance.
 
 🔸Decentralized design is advantageous for modular and distributed control applications.
-=========
+
 # Second LSS Project
 Optimization of Decentralized Control Weighting Using Genetic Algorithms
 
