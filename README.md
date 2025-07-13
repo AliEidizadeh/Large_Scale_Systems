@@ -21,11 +21,11 @@ This part investigates a large-scale system with minimal interaction between its
 
 -Simulation (using ode45) shows:
 
-   All states converge to zero from a non-zero initial condition.
+&nbsp;&nbsp;All states converge to zero from a non-zero initial condition.
    
-   Control inputs are smooth and bounded.
+&nbsp;&nbsp;Control inputs are smooth and bounded.
    
-   A cost function measuring total state energy is computed.
+&nbsp;&nbsp;A cost function measuring total state energy is computed.
    
 ### Decentralized Control
 -The system is divided into two subsystems, each with its own local LQR controller.
