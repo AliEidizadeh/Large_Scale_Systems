@@ -28,56 +28,53 @@ This part investigates a large-scale system with minimal interaction between its
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A cost function measuring total state energy is computed.
    
 ### Decentralized Control
--The system is divided into two subsystems, each with its own local LQR controller.
+🔸The system is divided into two subsystems, each with its own local LQR controller.
 
--A block-diagonal controller gain matrix is formed.
+🔸A block-diagonal controller gain matrix is formed.
 
--Simulation shows:
+🔸Simulation shows:
 
-   Effective regulation of system states, slightly slower than centralized control.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Effective regulation of system states, slightly slower than centralized control.
    
-   Structured and practical control inputs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Structured and practical control inputs.
    
-   Cost is higher than centralized but still acceptable.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cost is higher than centralized but still acceptable.
    
 ### Summary
--Centralized control offers better performance.
+🔸Centralized control offers better performance.
 
--Decentralized control provides scalability and ease of implementation in distributed architectures.
+🔸Decentralized control provides scalability and ease of implementation in distributed architectures.
 
 ## 🔹Coupled System
 This part focuses on a system with significant interaction between subsystems — a more complex and realistic scenario.
 ### Centralized Control
--The MIMO system is modeled and converted to state-space form.
+🔸The MIMO system is modeled and converted to state-space form.
 
--An LQR controller is designed with equal weighting on state and input penalties.
+🔸An LQR controller is designed with equal weighting on state and input penalties.
 
--Simulation shows:
+🔸Simulation shows:
 
-   Fast convergence of system states.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fast convergence of system states.
    
-   Smooth control signals.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Smooth control signals.
    
-   Computed cost function reflects high control performance.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computed cost function reflects high control performance.
    
 ### Decentralized Control
--Subsystems are independently controlled using local LQR designs.
+🔸Subsystems are independently controlled using local LQR designs.
 
--Gain matrices are combined in a block-diagonal form.
+🔸Gain matrices are combined in a block-diagonal form.
 
--Simulation shows:
+🔸Simulation shows:
 
-   Acceptable convergence, slightly slower than centralized control.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Acceptable convergence, slightly slower than centralized control.
    
-   Structured and bounded control inputs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Structured and bounded control inputs.
    
-   Cost is higher than centralized but within limits.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cost is higher than centralized but within limits.
    
 ### Summary
--Centralized design yields better optimal performance.
+🔸Centralized design yields better optimal performance.
 
--Decentralized design is advantageous for modular and distributed control applications.
+🔸Decentralized design is advantageous for modular and distributed control applications.
 
-
--Centralized design yields better optimal performance.
--Decentralized design is advantageous for modular and distributed control applications.
