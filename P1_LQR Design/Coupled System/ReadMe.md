@@ -1,0 +1,10 @@
+First LSS Project – Coupled System
+Author: Ali Eidizadeh 
+
+This project investigates the design and comparison of centralized and decentralized control strategies for a coupled large-scale system. The system under study is a multi-input multi-output system with interacting subsystems, which is a typical scenario in many engineering applications.
+
+In the first part, a centralized control approach is developed. The system is initially modeled using transfer functions and then transformed into a minimal state-space representation. Based on this model, a Linear Quadratic Regulator (LQR) controller is designed with equal weighting on states and control inputs to balance performance and effort. The system dynamics are simulated over a significant time horizon starting from a non-zero initial condition. The centralized controller effectively drives the system states to stability, while control signals remain smooth and within practical limits. Additionally, a performance cost metric is calculated to quantify the control effectiveness.
+
+The second part implements a decentralized control design, where the system is divided into smaller subsystems, each controlled independently using local state information. Separate LQR controllers are designed for each subsystem, and their gains are combined to form the decentralized control law. Simulations show that the decentralized controller successfully regulates the system states, although the convergence is slightly slower than the centralized case. The control signals remain structured for practical deployment, and the performance cost, while higher than the centralized design, stays within acceptable limits.
+
+Overall, this project demonstrates that both centralized and decentralized LQR control strategies are viable for coupled large-scale systems. The centralized controller achieves better performance and lower cost, whereas the decentralized controller offers benefits in terms of scalability and modularity, which are critical for complex industrial systems. The work highlights the important balance between optimal performance and practical considerations in control system design.
